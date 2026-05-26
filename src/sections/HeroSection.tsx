@@ -1,37 +1,49 @@
 export default function HeroSection() {
   return (
-    <section className="min-h-screen bg-black text-white flex items-center justify-center pt-24">
+    <section className="min-h-screen bg-black text-white flex items-center justify-center pt-24 px-6">
 
-      <div className="w-full max-w-6xl mx-auto px-5 sm:px-6 text-center">
+      <div className="max-w-6xl mx-auto text-center">
 
-        <div className="inline-block px-4 py-2 rounded-full border border-cyan-400/20 bg-cyan-400/10 text-cyan-300 text-xs sm:text-sm mb-6">
+        {/* Badge */}
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-cyan-400/20 bg-cyan-400/10 text-cyan-300 text-sm mb-8">
           Mobile Apps & Digital Solutions
         </div>
 
-        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight leading-[0.95]">
+        {/* Heading */}
+        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight leading-none">
+
           Build Your
+
           <span className="text-cyan-400"> Business </span>
-          Digitally
+
+          Into The Digital World.
+
         </h1>
 
-        <p className="mt-6 text-sm sm:text-base md:text-xl text-white/60 leading-relaxed max-w-2xl mx-auto">
-          Helping local businesses streamline bookings, customer management,
-          and daily operations with modern mobile apps and software.
+        {/* Description */}
+        <p className="mt-8 text-base sm:text-lg md:text-2xl text-white/60 max-w-3xl mx-auto leading-relaxed">
+
+          I help local businesses simplify bookings, orders,
+          customer management, and daily operations through
+          modern mobile applications and digital systems.
+
         </p>
 
-        <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        {/* Buttons */}
+        <div className="mt-12 flex flex-col sm:flex-row justify-center gap-4">
 
-          <button className="w-full sm:w-auto px-7 py-4 rounded-2xl bg-cyan-400 text-black font-semibold hover:scale-105 transition-transform">
+          <button className="px-8 py-4 rounded-2xl bg-cyan-400 text-black font-semibold hover:scale-105 transition-transform duration-300">
             Get Free Consultation
           </button>
 
-          <button className="w-full sm:w-auto px-7 py-4 rounded-2xl border border-white/10 hover:bg-white/5 transition">
+          <button className="px-8 py-4 rounded-2xl border border-white/10 text-white hover:bg-white/10 transition">
             View Projects
           </button>
 
         </div>
 
       </div>
+
     </section>
   );
 }
